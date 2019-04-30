@@ -5,4 +5,4 @@ before_script:
   - npm i jsdom
 script:
   - npx eslint .
-  - exit 0
+  - npx qunit test/index.js
