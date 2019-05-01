@@ -1,23 +1,7 @@
+import entryApi from '../src/entry-api.js';
 const test = QUnit.test;
 
 QUnit.module('orderEntry api');
-
-const entryApi = {
-    save(entry) {
-        // serialize to json
-        const json = JSON.stringify(entry);
-        // save to local storage
-        localStorage.setItem('entry', json);
-    }, 
-    get() {
-        // get from local storage
-        const json = localStorage.getItem('entry');
-        // deserialize to object
-        const entry = JSON.parse(json);
-        // return it
-        return entry;
-    }
-};
 
 test('round-trip applicant', (assert) => {
     //Arrange
