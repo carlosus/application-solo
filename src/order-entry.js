@@ -1,7 +1,7 @@
 function getOrderEntry(formData) {
     //convert data to variables
     const softnessNumber = parseInt(formData.get('softness'));
-    console.log(formData.get('features'));
+
     //make our object literal
     const orderEntry = {
         firstName: formData.get('first-name'),

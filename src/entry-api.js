@@ -1,13 +1,13 @@
-const entryApi = {
-    save(entry) {
+const orderEntryApi = {
+    save(orderEntry) {
         // serialize to json
-        const json = JSON.stringify(entry);
+        const json = JSON.stringify(orderEntry);
         // save to local storage
-        localStorage.setItem('entry', json);
+        localStorage.setItem('orderEntry', json);
     }, 
     get() {
         // get from local storage
-        const json = localStorage.getItem('entry');
+        const json = localStorage.getItem('orderEntry');
         // deserialize to object
         const entry = JSON.parse(json);
         // return it
@@ -15,4 +15,4 @@ const entryApi = {
     }
 };
 
-export default entryApi;
+export default orderEntryApi;

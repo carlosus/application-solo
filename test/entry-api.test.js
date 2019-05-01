@@ -1,4 +1,4 @@
-import entryApi from '../src/entry-api.js';
+import orderEntryApi from '../src/entry-api.js';
 const test = QUnit.test;
 
 QUnit.module('orderEntry api');
@@ -10,8 +10,8 @@ test('round-trip applicant', (assert) => {
 
     //Act 
     // Call the function you're testing and set the result to a const
-    entryApi.save(entry);
-    const result = entryApi.get();
+    orderEntryApi.save(entry);
+    const result = orderEntryApi.get();
 
     //Assert
     assert.deepEqual(result, entry);
