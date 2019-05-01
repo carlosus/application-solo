@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Istok+Web:400,700');
+
+body {
+    font-family: Istok Web, sans-serif;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+#logo {
+    width: 100px;
+    height: auto;
+}
+
+#pillow-image {
+    width: 400px;
+    height: auto;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.links {
+    text-align: center;
+}
