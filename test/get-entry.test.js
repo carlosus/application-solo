@@ -1,7 +1,7 @@
 import getOrderEntry from '../src/order-entry.js';
 const test = QUnit.test;
 
-test('time to test a function', function(assert) {
+test('make object literal from form data', function(assert) {
     //Arrange
     // Set up your parameters and expectations
     const expected = {
