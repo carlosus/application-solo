@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./src/main.css">
     <link rel="stylesheet" href="./src/apply.css">
 </head>
-<body class="gradient">
+<body>
     <header>
         <h1>Product Entry Form</h1>
     </header>
@@ -17,16 +17,18 @@
         <form id="order-entry">
             <section>
                 <h2>About You</h2>
-            
-                <p>
-                    <label class="text-label" for="first-name">First Name:</label>
-                    <input class="text-input" type="text" name="first-name" id="first-name" required>
-                </p>
+                <fieldset>
+                    <legend>Your Information</legend>
+                    <p>
+                        <label class="text-label" for="first-name">First Name:</label>
+                        <input class="text-input" type="text" name="first-name" id="first-name" required>
+                    </p>
 
-                <p>
-                    <label class="text-label" for="last-name">Last Name:</label>
-                    <input class="text-input" type="text" name="last-name" id="last-name" required>
-                </p>
+                    <p>
+                        <label class="text-label" for="last-name">Last Name:</label>
+                        <input class="text-input" type="text" name="last-name" id="last-name" required>
+                    </p>
+                </fieldset>
             </section>
 
             <section>
