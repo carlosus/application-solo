@@ -10,6 +10,5 @@ form.addEventListener('submit', (event) => {
 
     const formData = new FormData(form);
     const orderEntry = getOrderEntry(formData);
-
     orderEntryApi.save(orderEntry);
 });

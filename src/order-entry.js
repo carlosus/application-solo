@@ -13,7 +13,6 @@ function getOrderEntry(formData) {
     };
 
     return orderEntry;
-
 }
 
 export default getOrderEntry;
