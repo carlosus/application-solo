@@ -3,8 +3,11 @@ const test = QUnit.test;
 
 QUnit.module('orderEntry api');
 
+orderEntryApi.storage = sessionStorage;
+const testStorage = sessionStorage;
+
 test('round-trip applicant', (assert) => {
-    localStorage.removeItem('orderEntries');
+    testStorage.removeItem('orderEntries');
 
     //Arrange
     // Set up your parameters and expectations
@@ -20,7 +23,7 @@ test('round-trip applicant', (assert) => {
 });
 
 test('no orderEntries in local storage returns empty array', (assert) => {
-    localStorage.removeItem('orderEntries');
+    testStorage.removeItem('orderEntries');
     const expected = [];
 
     const orderEntries = orderEntryApi.getAll();
@@ -30,7 +33,7 @@ test('no orderEntries in local storage returns empty array', (assert) => {
 });
 
 test('two saves return array of two items', (assert) => {
-    localStorage.removeItem('orderEntries');
+    testStorage.removeItem('orderEntries');
 
     // arrange
     const orderEntry1 = { name: 'orderEntry1' };
