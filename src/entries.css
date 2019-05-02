@@ -1,0 +1,14 @@
+dl {
+    display: grid;
+    max
+}
+
+dt {
+    background: rgb(220, 172, 51);
+    color: #000;
+    text-align: left;
+}
+
+dt:after{
+    content: ":";
+}
