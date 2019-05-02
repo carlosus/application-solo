@@ -22,7 +22,7 @@ firstName.textContent = orderEntry.firstName;
 lastName.textContent = orderEntry.lastName;
 size.textContent = orderEntry.size;
 color.textContent = orderEntry.color;
-softness.textContent = orderEntry.softness;
+softness.textContent = orderEntry.softnessNumber;
 if(orderEntry.features) {
     features.textContent = orderEntry.features.join(', ');
 }

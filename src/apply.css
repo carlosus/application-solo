@@ -1,0 +1,29 @@
+main {
+    padding: 30px 0;
+
+}
+
+textarea {
+    width: 400px;
+    height: 100px;
+}
+
+.stacked-label {
+    display: inline-block;
+    width: 90px;
+}
+
+.text-input {
+    width: 200px;
+}
+
+button {
+    border: 0;
+    border-radius: 40%;
+    height: 40px;
+    width: 100px;
+    padding: 10px;
+    background: rgb(225, 235, 77);
+    color: white;
+    font-size: 1.1em;
+}
