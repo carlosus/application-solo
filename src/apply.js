@@ -1,4 +1,5 @@
 import getOrderEntry from './order-entry.js';
+import orderEntryApi from './entry-api.js';
 
 // reference needed dom nodes
 const form = document.getElementById('order-entry');
@@ -8,6 +9,6 @@ form.addEventListener('submit', (event) => {
     event.preventDefault();
 
     const formData = new FormData(form);
-
-    console.log(getOrderEntry(formData));
+    const orderEntry = getOrderEntry(formData);
+    orderEntryApi.save(orderEntry);
 });
