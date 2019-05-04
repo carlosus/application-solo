@@ -1,18 +1,28 @@
 @import url('https://fonts.googleapis.com/css?family=Istok+Web:400,700');
 
+body {
+	background: url('/assests/ostrich-background.jpeg') no-repeat 50% 50% fixed;
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+}
+
 .form-style {
-	width:450px;
+	width:400px;
 	padding:30px;
-	margin:40px auto;
+	margin: 40px auto;
+	margin-right: 60px;
 	background: #1e130c;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(45deg, #9a8478, #1e130c);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(45deg, #9a8478, #1e130c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(150deg, #9a8478, #1e130c);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(150deg, #9a8478, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	border-radius: 10px;
 	-webkit-border-radius:10px;
 	-moz-border-radius: 10px;
 	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
 	-moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
 	-webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+	float: right;
 }
 	
 .form-style .inner-wrap {
@@ -59,13 +69,13 @@
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	color: #fff;
-	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.12);
-	font: normal 30px 'Bitter', serif;
+	text-shadow: 1px 1px 3px rgba(121, 53, 53, 0.12);
+	font: 50px Istok Web, sans-serif;
 	-moz-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
 	-webkit-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
 	box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
 	border: 1px solid #257C9E;
-	font-size: 15px;
+	font-size: 25px;
 }
 
 button {
@@ -76,12 +86,12 @@ button {
 	-moz-border-radius: 5px;
 	color: #fff;
 	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.12);
-	font: normal 30px 'Bitter', serif;
+	font: 50px Istok Web, sans-serif;
 	-moz-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
 	-webkit-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
 	box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
 	border: 1px solid #D7ADA5;
-	font-size: 15px;
+	font-size: 20px;
 }
 
 button:hover{
