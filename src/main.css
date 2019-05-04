@@ -9,9 +9,15 @@ body {
     text-align: center;
 }
 
+header {
+    border-bottom: 2.5px solid #9a8478;
+    color: #9a8478;
+}
+
 #logo {
-    width: 100px;
+    width: 60px;
     height: auto;
+    display: inline-block;
 }
 
 #pillow-image {

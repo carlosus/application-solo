@@ -10,90 +10,82 @@
 </head>
 <body>
     <header>
-        <h1>Product Entry Form</h1>
+        <span><img id="logo" src="./assests/ostrich-logo.png" alt="logo"></span>
+
+        <h1>
+        Ostrich: Napping Head First
+        </h1>
     </header>
 
     <main>
-        <form id="order-entry">
-            <section>
-                <h2>About You</h2>
-                <fieldset>
-                    <legend>Your Information</legend>
-                    <p>
-                        <label class="text-label" for="first-name">First Name:</label>
-                        <input class="text-input" type="text" name="first-name" id="first-name" required>
-                    </p>
+        <div class="form-style">
+            <h1>Place Your Order</h1>
+            <form id="order-entry">
+                <div class="section">Tell Us Who You Are:</div>
+                <div class="inner-wrap">
+                            <label class="text-label" for="first-name">First Name:</label>
+                            <input class="text-input" type="text" name="first-name" id="first-name" required>
+                            <label class="text-label" for="last-name">Last Name:</label>
+                            <input class="text-input" type="text" name="last-name" id="last-name" required>
+                </div>
 
-                    <p>
-                        <label class="text-label" for="last-name">Last Name:</label>
-                        <input class="text-input" type="text" name="last-name" id="last-name" required>
-                    </p>
-                </fieldset>
-            </section>
+                <div class="section">What's Your Fit:</div>
+                <div class="inner-wrap">
+                    <input required type="radio" id="size" value="og" name="size">
+                    <label for="og">OG (Adult Size)</label>
 
-            <section>
-                <h2>Choose Your Size:</h2>
+                    <input required type="radio" id="size" value="mini" name="size">
+                    <label for="mini">Mini (Kids Size)</label>
+                </div>
 
-                <input required type="radio" id="size" value="og" name="size">
-                <label for="og">OG (Adult Size)</label>
+                <div class="section">Sleep in Style:</div>
+                <div class="inner-wrap">
+                    <label class="line-label" for="color">What's Your Shade:</label>
+                    <select id="color" name="color">
+                        <option value="" hidden disabled selected>Select a Color</option>
+                        <option value="black">Carbon Black</option>
+                        <option value="gray">Seal Gray</option>
+                        <option value="orange">Sunset Orange</option>
+                        <option value="blue">Silverlake Blue</option>
+                    </select>
+                </div>
 
-                <input required type="radio" id="size" value="mini" name="size">
-                <label for="mini">Mini (Kids Size)</label>
-            </section>
+                <div class="section">Softness Level:</div>
+                <div class="inner-wrap">
+                            <label for="softness">What's Your Comfort Number:</label>
+                            <input type="range" name="softness" id="softness" min="1" max="5" required>
+                            <span id="softness-display">5</span>
+                </div>
 
-            <section>
-                <h2>Sleep in Style</h2>
-                
-                <label class="line-label" for="color">Choose Shade:</label>
-                <select id="color" name="color">
-                    <option value="" hidden disabled selected>Select a Color</option>
-                    <option value="black">Carbon Black</option>
-                    <option value="gray">Seal Gray</option>
-                    <option value="orange">Sunset Orange</option>
-                    <option value="blue">Silverlake Blue</option>
-                </select>
-            </section>
+                <div class="section">Pimp Your Naps:</div>
+                <div class="inner-wrap">
+                    <fieldset>
+                        <legend>
+                            Select Extra Features:
+                        </legend>
 
-            <section>
-                <h2>Comfort Level</h2>
+                        <div>
+                            <input name="features" value="speakers" type="checkbox" id="features">
+                            <label for="speakers">Buil-In Bluetooth Speakers</label>
+                        </div>
+        
+                        <div>
+                            <input name="features" value="head-warmer" type="checkbox" id="features">
+                            <label for="warmer">Head Warmer</label>
+                        </div>
+        
+                        <div>
+                            <input name="features" value="head-massager" type="checkbox" id="features">
+                            <label for="head-massager">Head Massager</label>
+                        </div>
+                    </fieldset>
+                </div>
 
-                <p>
-                    <label for="softness">Choose Softness Level:</label>
-                    <input type="range" name="softness" id="softness" min="1" max="5" required>
-                    <span id="softness-display">5</span>
-                </p>
-            </section>
-
-            <section>
-                <h2>Pimp Your Naps</h2>
-
-                <fieldset>
-                    <legend>
-                        Extra Features:
-                    </legend>
-
-                    <div>
-                        <input name="features" value="speakers" type="checkbox" id="features">
-                        <label for="speakers">Buil-In Bluetooth Speakers</label>
-                    </div>
-    
-                    <div>
-                        <input name="features" value="head-warmer" type="checkbox" id="features">
-                        <label for="warmer">Head Warmer</label>
-                    </div>
-    
-                    <div>
-                        <input name="features" value="head-massager" type="checkbox" id="features">
-                        <label for="head-massager">Head Massager</label>
-                    </div>
-                </fieldset>
-            </section>
-
-            <section>
-                <h2>Submit Order</h2>
-                <button>Submit</button>
-            </section>
-        </form>
+                <div class="button-section">
+                    <button>Submit Order</button>
+                </div>
+            </form>
+        </div>
     </main>
     <script type="module" src="./src/apply.js"></script>
 </body>
