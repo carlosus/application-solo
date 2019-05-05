@@ -17,7 +17,7 @@ for(let i = 0; i < orderEntries.length; i++) {
     //create a seach params object
     const searchParams = new URLSearchParams();
     // set the name key with the orderEntry's name as the value
-    searchParams.set('firstName', orderEntry.firstName);
+    searchParams.set('first-name', orderEntry.firstName);
     // use the formatted search string as the end of the link href
     // that goes to the detail page
     link.href = 'entries.html?' + searchParams.toString();
@@ -30,7 +30,7 @@ for(let i = 0; i < orderEntries.length; i++) {
     tr.appendChild(firstNameCell);
 
     const lastNameCell = document.createElement('td');
-    lastNameCell.textContent = orderEntry.firstName;
+    lastNameCell.textContent = orderEntry.lastName;
     tr.appendChild(lastNameCell);
 
     const sizeCell = document.createElement('td');
