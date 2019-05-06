@@ -39,11 +39,9 @@ for(let i = 0; i < orderEntries.length; i++) {
 
     const colorCell = document.createElement('td');
     colorCell.textContent = orderEntry.color;
-    tr.appendChild(colorCell);
 
     const softnessCell = document.createElement('td');
     softnessCell.textContent = orderEntry.softnessNumber;
-    tr.appendChild(softnessCell);
 
     const featuresCell = document.createElement('td');
     let featuresList = '';
@@ -51,7 +49,6 @@ for(let i = 0; i < orderEntries.length; i++) {
         featuresList = orderEntry.features.join(', ');
     }
     featuresCell.textContent = featuresList;
-    tr.appendChild(featuresCell);
 
     tbody.appendChild(tr);
 }

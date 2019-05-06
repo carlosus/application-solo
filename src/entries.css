@@ -1,13 +1,25 @@
 dl {
     display: grid;
+    grid-template-columns: max-content 1fr;
+}
+
+dt, dd {
+    display: inline-block;
+    padding: 8px 10px;
 }
 
 dt {
-    background: rgb(220, 172, 51);
-    color: #000;
-    text-align: left;
+    background: #00AA8F;
+    color: white;
+    text-align: right;
+    padding-left: 30px;
+    font-size: .95em;
 }
 
 dt:after{
     content: ":";
+}
+
+dd {
+    margin-left: 8px;;
 }

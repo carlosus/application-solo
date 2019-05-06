@@ -1,0 +1,21 @@
+table {
+    width: 100%;
+    max-width: 750px;
+    margin: auto;
+    border-collapse: collapse;
+    border-spacing:5em;
+}
+
+thead {
+    font-weight: bolder;
+    color: white;
+    background: #EB4D5C;
+}
+
+tbody tr:nth-child(even) {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+td {
+    padding: 8px 5px;
+}
