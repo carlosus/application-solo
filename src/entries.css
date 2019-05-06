@@ -1,8 +1,10 @@
-dl {
-    display: grid;
-    grid-template-columns: max-content 1fr;
-    margin-top: 40px;
-} 
+body {
+	background: url('/assests/ostrich-background.jpeg') no-repeat 50% 50% fixed;
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+}
 
 dt, dd {
     display: inline-block;
@@ -24,13 +26,6 @@ dt {
 	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
 	-moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
 	-webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
-	/* float: right; */
-    /* background: #00AA8F;
-    color: white;
-    text-align: right;
-    padding-left: 30px;
-    font-size: .95em;
-} */
 }
 
 dt:after {

@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Istok+Web:400,700');
 
-/* body {
+body {
 	background: url('/assests/ostrich-background.jpeg') no-repeat 50% 50% fixed;
     background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    -webkit-background-size: cover;
-} */
+	-webkit-background-size: cover;
+	text-align: center;
+}
 
 .form-style {
 	width:400px;

@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Istok+Web:400,700');
 
 body {
-    background: url('/assests/ostrich-background.jpeg') no-repeat 50% 50% fixed;
+    background: url('/assests/ostrich-background-blank.jpg') no-repeat 50% 50% fixed;
     background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -31,7 +31,7 @@ header {
     padding-top: 15px;
     padding-bottom: 10px;
     border-radius: 15%;
-    float: none;
+    text-align: center;
 }
 
 .links {
