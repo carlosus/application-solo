@@ -10,11 +10,17 @@ const orderEntryApi = {
         // save to local storage
         orderEntryApi.storage.setItem('orderEntries', json);
     }, 
-    get() {
+    get(firstName) {
         // use getAll to get orderEntries
         const orderEntries = orderEntryApi.getAll();
         // return it
-        return orderEntries[0];
+
+        for(let i = 0; i < orderEntries.length; i++) {
+            const orderEntry = orderEntries[i];
+            if(orderEntry.firstName === firstName) {
+                return orderEntry;
+            } 
+        }
     },
     getAll() {
         // get from local storage

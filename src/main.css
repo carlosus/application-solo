@@ -1,17 +1,22 @@
 @import url('https://fonts.googleapis.com/css?family=Istok+Web:400,700');
 
 body {
+    background: url('/assests/ostrich-background-blank.jpg') no-repeat 50% 50% fixed;
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
     font-family: Istok Web, sans-serif;
     margin-right: 50px;
     margin-left: 50px;
     margin-top: 40px;
     margin-bottom: 40px;
-    text-align: center;
 }
 
 header {
     border-bottom: 2.5px solid #9a8478;
     color: #9a8478;
+    text-align: center;
 }
 
 #logo {
@@ -25,6 +30,8 @@ header {
     height: auto;
     padding-top: 15px;
     padding-bottom: 10px;
+    border-radius: 15%;
+    text-align: center;
 }
 
 .links {
