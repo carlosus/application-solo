@@ -17,7 +17,7 @@ const orderEntryApi = {
 
         for(let i = 0; i < orderEntries.length; i++) {
             const orderEntry = orderEntries[i];
-            if(orderEntry.firstName === firstName) {
+            if(orderEntry.name === firstName) {
                 return orderEntry;
             } 
         }
