@@ -11,8 +11,8 @@ test('round-trip applicant', (assert) => {
 
     //Arrange
     // Set up your parameters and expectations
-    const orderEntry1 = { name: 'tester1' };
-    const orderEntry2 = { name: 'tester2' };
+    const orderEntry1 = { firstName: 'tester1' };
+    const orderEntry2 = { firstName: 'tester2' };
 
     //Act 
     // Call the function you're testing and set the result to a const
