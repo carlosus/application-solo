@@ -18,7 +18,7 @@ test('round-trip applicant', (assert) => {
     // Call the function you're testing and set the result to a const
     orderEntryApi.save(orderEntry1);
     orderEntryApi.save(orderEntry2);
-    const result = orderEntryApi.get(orderEntry2.name);
+    const result = orderEntryApi.get(orderEntry2.firstName);
     //Assert
     assert.deepEqual(result, orderEntry2);
 });
